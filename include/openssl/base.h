@@ -102,6 +102,9 @@ extern "C" {
 #define OPENSSL_PNACL
 #elif defined(__myriad2__)
 #define OPENSSL_32_BIT
+#elif defined(__loongarch64__)
+#define OPENSSL_64_BIT
+#define OPENSSL_LOONGARCH64
 #else
 #error "Unknown target CPU"
 #endif
